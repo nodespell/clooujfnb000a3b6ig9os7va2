@@ -1,12 +1,10 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react'
+import { createBrowserRouter, RouterProvider, Routes, Route, Link } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <div>
+const router = createBrowserRouter([{ path: "*", Component: Root }]);
+
+function Root() {
+  return <div>
   <Routes>
     <Route
       element={<>HOME<React.Fragment key=".1"><div><Link to="/">Home</Link></div><div><Link to="/about">About</Link></div></React.Fragment></>}
@@ -18,10 +16,8 @@ function App() {
     />
   </Routes>
 </div>
-        <div style={{ color: 'gray' }}>Deployed with NodeSpell</div>
-      </header>
-    </div>
-  );
 }
 
-export default App;
+export default function App() {
+  return <RouterProvider router={router} />
+}
