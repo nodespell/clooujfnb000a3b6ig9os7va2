@@ -7,7 +7,7 @@ function Root() {
   return <div>
   <Routes>
     <Route
-      element={<div><React.Fragment key=".0">zhiqi.art<React.Fragment key=".1"><div><Link to="/">Home</Link></div><div><Link to="/about">About</Link></div></React.Fragment><Outlet /></React.Fragment></div>}
+      element={<div><React.Fragment key=".0">zhiqi.art<React.Fragment key=".1"><div><Link to="/">Home</Link></div><div><Link to="/about">About</Link></div></React.Fragment><Outlet /><div style={{color: 'gray', fontFamily: 'monospace'}}>Made with NodeSpell</div></React.Fragment></div>}
       path=""
     >
       <Route
