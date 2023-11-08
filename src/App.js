@@ -11,7 +11,7 @@ function Root() {
       path="/"
     />
     <Route
-      element="ABOUT"
+      element={<>ABOUT<React.Fragment key=".1"><div><Link to="/">Home</Link></div><div><Link to="/about">About</Link></div></React.Fragment></>}
       path="/about"
     />
   </Routes>
